@@ -139,7 +139,7 @@ const Header: React.FC<HeaderProps> = ({
                                     onClick={handleLogout}
                                     className="bg-white px-6 py-2"
                                 >
-                                    Log out
+                                    Logout
                                 </Button>
                                 <Button
                                     onClick={() => router.push('/account')}
