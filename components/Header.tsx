@@ -4,6 +4,7 @@ import Button from "./Button";
 
 import useAuthModal from "@/hooks/useAuthModal";
 import { useUser } from "@/hooks/useUser";
+import usePlayer from "@/hooks/usePlayer";
 
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -26,6 +27,7 @@ const Header: React.FC<HeaderProps> = ({
 }) => {
     const authModal = useAuthModal();
     const router = useRouter();
+    const player = usePlayer();
 
     const supabaseClient = useSupabaseClient();
     const { user } = useUser();
@@ -35,6 +37,7 @@ const Header: React.FC<HeaderProps> = ({
         const { error } = await supabaseClient.auth.signOut();
 
         //reset any playing songs
+        player.reset();
         router.refresh();
 
         if (error) {
@@ -99,6 +102,7 @@ const Header: React.FC<HeaderProps> = ({
 
                 <div className="flex md:hidden gap-x-2 items-center">
                     <button
+                        onClick={() => router.push('/')}
                         className="
                             rounded-full
                             p-2
@@ -106,6 +110,7 @@ const Header: React.FC<HeaderProps> = ({
                             flex
                             items-center
                             justify-center
+                            cursor-pointer
                             hover:opacity-75
                             transition
                         "
@@ -113,6 +118,7 @@ const Header: React.FC<HeaderProps> = ({
                         <HiHome className="text-black" size={20}/>
                     </button>
                     <button
+                        onClick={() => router.push('/search')}
                         className="
                             rounded-full
                             p-2
@@ -120,6 +126,7 @@ const Header: React.FC<HeaderProps> = ({
                             flex
                             items-center
                             justify-center
+                            cursor-pointer
                             hover:opacity-75
                             transition
                         "
