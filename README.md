@@ -7,7 +7,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 <h1 align="center" id="title">Spot</h1>
 
-<p id="description">A Full Stack music player app to store and play your songs with ease! Its uses Supabase as authentication and postgreSQL database and next as server.</p>
+<p id="description">A Full Stack Spotify clone to store and play your songs with ease! Its uses Supabase as authentication and postgreSQL database and next as server.</p>
 
 ## Getting Started
 
