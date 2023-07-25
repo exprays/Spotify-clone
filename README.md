@@ -1,4 +1,5 @@
-![Image](https://github.com/0rbitSoc/Spot/blob/master/public/images/spot-readme.jpeg)
+
+![spot-r](https://github.com/0rbitSoc/Spot/assets/133385746/58815aa6-eee7-4ff0-8972-b0c4880b5d0f)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -19,6 +20,7 @@ yarn dev
 # or
 pnpm dev
 ```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
