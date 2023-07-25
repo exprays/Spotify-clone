@@ -1,4 +1,4 @@
-<img src="https://github.com/0rbitSoc/Spot/blob/master/public/images/spot-readme.jpeg" />
+<p align="center"><img src="https://github.com/0rbitSoc/Spot/blob/master/public/images/spot-readme.jpeg" alt="project-image"></p>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
